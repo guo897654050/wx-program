@@ -7,5 +7,17 @@ export default class Native {
       icon: 'none',
       duration: 1000,
     })
+  } 
+
+  
+  static navigateTo(url) {
+    return new Promise((resolve, reject) => {
+      Taro.navigateTo({
+        url,
+        success: resolve,
+        fail: reject,
+      });
+    });
   }
+
 }

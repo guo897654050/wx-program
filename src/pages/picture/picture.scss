@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 30px;
+  background: #ffffff;
+  Image {
+    width: 300px;
+  }
+  Image:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .footer {
+    margin: 20px 0;
+    display: flex;
+    .prev,
+    .next {
+      width: 200px;
+      margin-right: 40px;
+      color: #ffffff;
+      background: #67c23a;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+}
